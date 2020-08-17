@@ -137,6 +137,7 @@ export default {
     showVideos () {
       const videos = this.item.videos;
       console.log(videos);
+      console.log(this.myvideo);
       return videos && videos.results && videos.results.length;
     },
 
