@@ -2,7 +2,7 @@ module.exports = {
   mode: 'universal',
   
   server: {
-    port: 8000, // par défaut : 3000
+    port: process.env.PORT || 8000, // par défaut : 3000
     host: '0.0.0.0' // par défaut : localhost
   },
   
