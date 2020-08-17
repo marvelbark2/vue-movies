@@ -89,9 +89,15 @@ export default {
       this.videos.forEach((video) => {
         // eslint-disable-next-line no-console
         console.log('video type : ' + video.type);
-        this.$set(video, 'thumb', `https://img.youtube.com/vi/${video.key}/mqdefault.jpg`);
-        this.$set(video, 'src', `https://www.youtube.com/embed/${video.key}?rel=0&showinfo=0&autoplay=1`);
-        this.$set(video, 'url', `https://youtube.com/watch?v=${video.key}`);
+        if (video.type === 'Trailer') {
+          this.$set(video, 'thumb', `https://img.youtube.com/vi/${video.key}/mqdefault.jpg`);
+          this.$set(video, 'src', `https://www.youtube.com/embed/${video.key}?rel=0&showinfo=0&autoplay=1`);
+          this.$set(video, 'url', `https://youtube.com/watch?v=${video.key}`);
+        } else if (video.type === 'stream') {
+          this.$set(video, 'thumb', video.thumb);
+          this.$set(video, 'src', `http://historical-deciduous-antimatter.glitch.me/embed/${video.key}`);
+          this.$set(video, 'url', video.url);
+        };
       });
 
       // get video duration from YouTube api
