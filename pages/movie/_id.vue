@@ -181,7 +181,7 @@ export default {
       if (this.showImages) menu.push('Photos');
       
       // stream
-      menu.push('Overview');
+      menu.push('Stream');
       
       this.menu = menu;
     },
