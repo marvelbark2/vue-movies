@@ -19,10 +19,10 @@
         :people="item.credits.cast" />
     </template>
 
-    <template v-if="activeMenu === 'videos' && showVideos">
-      <Videos
-        :videos="item.videos.results" />
-    </template>
+    //<template v-if="activeMenu === 'videos' && showVideos">
+     // <Videos
+     //   :videos="item.videos.results" />
+   // </template>
 
     <template v-if="activeMenu === 'stream'">
       <Videos
