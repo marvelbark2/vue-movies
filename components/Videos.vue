@@ -102,11 +102,15 @@ export default {
             }
           });
         } else if (video.type === 'stream') {
+          // eslint-disable-next-line no-console
+          console.log('stream Loop');
           this.$set(video, 'thumb', video.thumb);
           this.$set(video, 'src', `http://historical-deciduous-antimatter.glitch.me/embed/${video.key}`);
           this.$set(video, 'url', video.url);
         };
       });
+      // eslint-disable-next-line no-console
+      console.log(this.videos);
     },
 
     filterVideos () {
