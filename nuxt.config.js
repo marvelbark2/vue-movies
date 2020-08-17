@@ -1,18 +1,6 @@
 module.exports = {
   mode: 'universal',
   
-  server: {
-      port: process.env.PORT || 3000, // par défaut : 3000
-      host: '0.0.0.0' // par défaut : localhost
-    },
-  
-  vue: {
-    config: {
-      productionTip: false,
-      devtools: false,
-    },
-  },
-
   env: {
     FRONTEND_URL: process.env.FRONTEND_URL || '',
     API_KEY: process.env.API_KEY || '',
