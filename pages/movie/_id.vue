@@ -100,7 +100,7 @@ export default {
       menu: [],
       activeMenu: 'overview',
       recommended: null,
-      myvideo: {name: 'Myvideo', url: 'https://historical-deciduous-antimatter.glitch.me/stream/339BE5B6F215AB211226368305839D804C102A59', duration: 200, type: 'stream'},
+      myvideo: [{name: 'Myvideo', url: 'https://historical-deciduous-antimatter.glitch.me/stream/339BE5B6F215AB211226368305839D804C102A59', duration: 200, type: 'stream'}],
     };
   },
 
