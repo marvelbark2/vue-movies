@@ -90,7 +90,8 @@
 </template>
 
 <script>
-import { name, stars, yearStart, cert, backdrop, trailer } from '~/mixins/Details';
+import { name, stars, yearStart, cert, backdrop, 
+} from '~/mixins/Details';
 import Modal from '~/components/Modal';
 
 export default {
@@ -130,6 +131,7 @@ export default {
   methods: {
     openModal () {
       this.modalVisible = true;
+      console.log(this.trailer);
     },
 
     closeModal () {
