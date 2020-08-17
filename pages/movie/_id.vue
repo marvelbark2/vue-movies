@@ -128,7 +128,7 @@ export default {
     showVideos () {
       const videos = this.item.videos;
       // eslint-disable-next-line no-console
-      console.log(videos);
+      console.log(videos.results);
       // eslint-disable-next-line no-console
       console.log(this.myvideo);
       return videos && videos.results && videos.results.length;
