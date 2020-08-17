@@ -121,7 +121,7 @@ export default {
       return credits && credits.cast && credits.cast.length;
     },
     showVideos () {
-      return videos && videos.results && videos.results.length;
+     // return videos && videos.results && videos.results.length;
     },
     showImages () {
       const images = this.item.images;
