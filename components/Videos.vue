@@ -109,8 +109,6 @@ export default {
           this.$set(video, 'url', video.url);
         };
       });
-      // eslint-disable-next-line no-console
-      console.log(this.activeVideos);
     },
 
     filterVideos () {
