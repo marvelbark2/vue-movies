@@ -24,6 +24,11 @@
         :videos="item.videos.results" />
     </template>
 
+    <template v-if="activeMenu === 'stream'">
+      <Videos
+        :videos="item.videos.results" />
+    </template>
+
     <template v-if="activeMenu === 'photos' && showImages">
       <Images
         v-if="item.images.backdrops.length"
