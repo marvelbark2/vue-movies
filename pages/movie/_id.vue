@@ -96,7 +96,7 @@ export default {
       menu: [],
       activeMenu: 'overview',
       recommended: null,
-      myvideo: [{{ id: 1, key: '339BE5B6F215AB211226368305839D804C102A59', site: 'SelfServer', name: 'Myvideo', src: 'https://www.youtube.com/embed/MsdVLe2xi9g?rel=0&showinfo=0&autoplay=1', url: 'https://historical-deciduous-antimatter.glitch.me/stream/339BE5B6F215AB211226368305839D804C102A59', thumb: 'https://image.tmdb.org/t/p/w370_and_h556_bestv2/5MSDwUcqnGodFTvtlLiLKK0XKS.jpg', duration: 200, type: 'stream' } }],
+      myvideo: [{ id: 1, key: '339BE5B6F215AB211226368305839D804C102A59', site: 'SelfServer', name: 'Myvideo', src: 'https://www.youtube.com/embed/MsdVLe2xi9g?rel=0&showinfo=0&autoplay=1', url: 'https://historical-deciduous-antimatter.glitch.me/stream/339BE5B6F215AB211226368305839D804C102A59', thumb: 'https://image.tmdb.org/t/p/w370_and_h556_bestv2/5MSDwUcqnGodFTvtlLiLKK0XKS.jpg', duration: 200, type: 'stream' }],
     };
   },
   computed: {
