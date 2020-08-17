@@ -74,7 +74,7 @@
               @click="openModal">
               <!-- eslint-disable-next-line -->
               <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="#fff"><path d="M3 22v-20l18 10-18 10z"/></svg></span>
-              <span class="txt">Watch the trailer</span>
+              <span class="txt">Watch Trailer</span>
             </button>
           </div>
         </transition>
@@ -90,8 +90,7 @@
 </template>
 
 <script>
-import { name, stars, yearStart, cert, backdrop, 
-} from '~/mixins/Details';
+import { name, stars, yearStart, cert, backdrop, trailer } from '~/mixins/Details';
 import Modal from '~/components/Modal';
 
 export default {
