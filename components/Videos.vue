@@ -101,14 +101,6 @@ export default {
           this.$set(video, 'url', video.url);
         };
       });
-      // get video duration from YouTube api
-      getYouTubeVideo(ids).then((response) => {
-        for (let index = 0; index < this.videos.length; index++) {
-          if (response.items[index]) {
-            this.$set(this.videos[index], 'duration', response.items[index].contentDetails.duration);
-          }
-        }
-      });
       // eslint-disable-next-line no-console
       console.log(this.activeVideos);
     },
