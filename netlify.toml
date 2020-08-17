@@ -1,6 +1,6 @@
 [build]
   publish = "dist/"
-  command = "npm run generate"
+  command = "npm run dev"
 
 [context.production]
   command = "BASE_URL=$URL npm run generate"
