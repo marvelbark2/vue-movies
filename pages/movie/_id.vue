@@ -179,7 +179,10 @@ export default {
 
       // images
       if (this.showImages) menu.push('Photos');
-
+      
+      // stream
+      menu.push('Overview');
+      
       this.menu = menu;
     },
 
