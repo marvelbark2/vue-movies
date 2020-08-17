@@ -126,11 +126,6 @@ export default {
       return credits && credits.cast && credits.cast.length;
     },
     showVideos () {
-      const videos = this.item.videos;
-      // eslint-disable-next-line no-console
-      console.log(videos.results);
-      // eslint-disable-next-line no-console
-      console.log(this.myvideo);
       return videos && videos.results && videos.results.length;
     },
     showImages () {
