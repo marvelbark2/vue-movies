@@ -110,7 +110,7 @@ export default {
         };
       });
       // eslint-disable-next-line no-console
-      console.log(this.videos);
+      console.log(this.activeVideos);
     },
 
     filterVideos () {
