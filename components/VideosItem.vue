@@ -15,7 +15,7 @@
         <div
           v-if="video.duration"
           :class="$style.duration">
-          {{ formatDuration(video.duration) }}
+          200
         </div>
 
         <div :class="$style.play">
@@ -55,60 +55,60 @@ export default {
       this.$emit('openModal', index);
     },
 
-    getSeconds (duration) {
-      let a = duration.match(/\d+/g);
+    // getSeconds (duration) {
+    //   let a = duration.match(/\d+/g);
 
-      if (duration.indexOf('M') >= 0 && duration.indexOf('H') === -1 && duration.indexOf('S') === -1) {
-        a = [0, a[0], 0];
-      }
+    //   if (duration.indexOf('M') >= 0 && duration.indexOf('H') === -1 && duration.indexOf('S') === -1) {
+    //     a = [0, a[0], 0];
+    //   }
 
-      if (duration.indexOf('H') >= 0 && duration.indexOf('M') === -1) {
-        a = [a[0], 0, a[1]];
-      }
+    //   if (duration.indexOf('H') >= 0 && duration.indexOf('M') === -1) {
+    //     a = [a[0], 0, a[1]];
+    //   }
 
-      if (duration.indexOf('H') >= 0 && duration.indexOf('M') === -1 && duration.indexOf('S') === -1) {
-        a = [a[0], 0, 0];
-      }
+    //   if (duration.indexOf('H') >= 0 && duration.indexOf('M') === -1 && duration.indexOf('S') === -1) {
+    //     a = [a[0], 0, 0];
+    //   }
 
-      duration = 0;
+    //   duration = 0;
 
-      if (a.length === 3) {
-        duration = duration + parseInt(a[0]) * 3600;
-        duration = duration + parseInt(a[1]) * 60;
-        duration = duration + parseInt(a[2]);
-      }
+    //   if (a.length === 3) {
+    //     duration = duration + parseInt(a[0]) * 3600;
+    //     duration = duration + parseInt(a[1]) * 60;
+    //     duration = duration + parseInt(a[2]);
+    //   }
 
-      if (a.length === 2) {
-        duration = duration + parseInt(a[0]) * 60;
-        duration = duration + parseInt(a[1]);
-      }
+    //   if (a.length === 2) {
+    //     duration = duration + parseInt(a[0]) * 60;
+    //     duration = duration + parseInt(a[1]);
+    //   }
 
-      if (a.length === 1) {
-        duration = duration + parseInt(a[0]);
-      }
+    //   if (a.length === 1) {
+    //     duration = duration + parseInt(a[0]);
+    //   }
 
-      return duration;
-    },
+    //   return duration;
+    // },
 
-    formatDuration (duration) {
-      const seconds = this.getSeconds(duration);
-      let secondsLeft = seconds;
+    // formatDuration (duration) {
+    //   const seconds = this.getSeconds(duration);
+    //   let secondsLeft = seconds;
 
-      // hours
-      // const hours = Math.floor(secondsLeft / 3600);
-      secondsLeft = secondsLeft % 3600;
+    //   // hours
+    //   // const hours = Math.floor(secondsLeft / 3600);
+    //   secondsLeft = secondsLeft % 3600;
 
-      // mins
-      const mins = Math.floor(secondsLeft / 60);
-      secondsLeft = secondsLeft % 60;
+    //   // mins
+    //   const mins = Math.floor(secondsLeft / 60);
+    //   secondsLeft = secondsLeft % 60;
 
-      // prepend 0 if less than 10
-      if (secondsLeft < 10) {
-        secondsLeft = `0${secondsLeft}`;
-      }
+    //   // prepend 0 if less than 10
+    //   if (secondsLeft < 10) {
+    //     secondsLeft = `0${secondsLeft}`;
+    //   }
 
-      return `${mins}:${secondsLeft}`;
-    },
+    //   return `${mins}:${secondsLeft}`;
+    // },
   },
 };
 </script>
