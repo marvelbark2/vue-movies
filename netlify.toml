@@ -1,12 +1,12 @@
 [build]
   publish = "dist/"
-  command = "npm run dev"
+  command = "npm run generate"
 
-[context.development]
-  command = "BASE_URL=$URL npm run dev"
+[context.production]
+  command = "BASE_URL=$URL npm run generate"
 
 [context.deploy-preview]
-  command = "BASE_URL=$DEPLOY_PRIME_URL npm run dev"
+  command = "BASE_URL=$DEPLOY_PRIME_URL npm run generate"
 
 [context.branch-deploy]
-  command = "BASE_URL=$DEPLOY_URL npm run dev"
+  command = "BASE_URL=$DEPLOY_URL npm run generate"
